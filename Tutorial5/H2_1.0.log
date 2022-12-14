@@ -1,0 +1,940 @@
+DEBUG:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:PySCF processing messages log:
+System: uname_result(system='Linux', node='iiserk37-OptiPlex-9020', release='5.15.0-56-generic', version='#62~20.04.1-Ubuntu SMP Tue Nov 22 21:24:20 UTC 2022', machine='x86_64', processor='x86_64')  Threads 4
+Python 3.8.10 (default, Nov 14 2022, 12:59:47) 
+[GCC 9.4.0]
+numpy 1.23.5  scipy 1.9.3
+Date: Wed Dec 14 17:46:28 2022
+PySCF version 2.1.1
+PySCF path  /MS/sk19ms123/.local/lib/python3.8/site-packages/pyscf
+
+[CONFIG] conf_file None
+[INPUT] verbose = 4
+[INPUT] num. atoms = 2
+[INPUT] num. electrons = 2
+[INPUT] charge = 0
+[INPUT] spin (= nelec alpha-beta = 2S) = 0
+[INPUT] symmetry False subgroup None
+[INPUT] Mole.unit = Angstrom
+[INPUT] Symbol           X                Y                Z      unit          X                Y                Z       unit  Magmom
+[INPUT]  1 H      0.000000000000   0.000000000000   0.000000000000 AA    0.000000000000   0.000000000000   0.000000000000 Bohr   0.0
+[INPUT]  2 H      0.000000000000   0.000000000000   0.735000000000 AA    0.000000000000   0.000000000000   1.388948701555 Bohr   0.0
+
+nuclear repulsion = 0.71996899444898
+number of shells = 2
+number of NR pGTOs = 6
+number of NR cGTOs = 2
+basis = sto3g
+ecp = {}
+CPU time:         2.84
+
+DEBUG:h5py._conv:Creating converter from 5 to 3
+INFO:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:PySCF kernel() converged: True, e(hf): -1.1169989967540035
+INFO:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:HF Electronic dipole moment: [-0.        -0.        -1.3889487]
+INFO:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:Nuclear dipole moment: [0.        0.        1.3889487]
+INFO:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:Total dipole moment: [0. 0. 0.]
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.19836 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10204 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.04601 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05817 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05555 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05555 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05507 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05507 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.06223 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05627 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.06080 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05984 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05651 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.05531 (ms)
+INFO:qiskit.utils.quantum_instance:Overwriting the number of shots in the quantum instance with the settings from the backend.
+INFO:qiskit.utils.quantum_instance:
+Qiskit Terra version: 0.22.3
+Backend: 'statevector_simulator (AerProvider)', with following setting:
+{'basis_gates': ['ccx', 'cp', 'cswap', 'csx', 'cu', 'cu1', 'cu2', 'cu3', 'cx', 'cy', 'cz', 'delay', 'diagonal', 'h', 'id', 'initialize', 'mcp', 'mcphase', 'mcr', 'mcrx', 'mcry', 'mcrz', 'mcswap', 'mcsx', 'mcu', 'mcu1', 'mcu2', 'mcu3', 'mcx', 'mcy', 'mcz', 'multiplexer', 'p', 'pauli', 'r', 'rx', 'rxx', 'ry', 'ryy', 'rz', 'rzx', 'rzz', 's', 'sdg', 'swap', 'sx', 'sxdg', 't', 'tdg', 'u', 'u1', 'u2', 'u3', 'unitary', 'x', 'y', 'z', 'kraus', 'qerror_loc', 'quantum_channel', 'roerror', 'save_amplitudes', 'save_amplitudes_sq', 'save_density_matrix', 'save_expval', 'save_probs', 'save_probs_ket', 'save_state', 'save_statevector', 'set_statevector'], 'coupling_map': None}
+{'initial_layout': None, 'seed_transpiler': None, 'optimization_level': None}
+RunConfig(shots=1)
+{'timeout': None}
+{}
+{}
+Measurement mitigation: None
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:
+==================== Setting of VQE ============================
+Algorithm: VQE
+-- max_evals_grouped: 1
+-- circuit_sampler: <qiskit.opflow.converters.circuit_sampler.CircuitSampler object at 0x7f36936909a0>
+-- expectation: None
+-- include_custom: False
+-- ansatz:      ┌───┐┌───────┐
+q_0: ┤ X ├┤ Rz(0) ├
+     └───┘└───────┘
+q_1: ──────────────
+     ┌───┐         
+q_2: ┤ X ├─────────
+     └───┘         
+q_3: ──────────────
+                   
+-- optimizer: <qiskit.algorithms.optimizers.slsqp.SLSQP object at 0x7f3693690d30>
+-- initial_point: Random seed
+-- gradient: None
+-- quantum_instance: 
+Qiskit Terra version: 0.22.3
+Backend: 'statevector_simulator (AerProvider)', with following setting:
+{'basis_gates': ['ccx', 'cp', 'cswap', 'csx', 'cu', 'cu1', 'cu2', 'cu3', 'cx', 'cy', 'cz', 'delay', 'diagonal', 'h', 'id', 'initialize', 'mcp', 'mcphase', 'mcr', 'mcrx', 'mcry', 'mcrz', 'mcswap', 'mcsx', 'mcu', 'mcu1', 'mcu2', 'mcu3', 'mcx', 'mcy', 'mcz', 'multiplexer', 'p', 'pauli', 'r', 'rx', 'rxx', 'ry', 'ryy', 'rz', 'rzx', 'rzz', 's', 'sdg', 'swap', 'sx', 'sxdg', 't', 'tdg', 'u', 'u1', 'u2', 'u3', 'unitary', 'x', 'y', 'z', 'kraus', 'qerror_loc', 'quantum_channel', 'roerror', 'save_amplitudes', 'save_amplitudes_sq', 'save_density_matrix', 'save_expval', 'save_probs', 'save_probs_ket', 'save_state', 'save_statevector', 'set_statevector'], 'coupling_map': None}
+{'initial_layout': None, 'seed_transpiler': None, 'optimization_level': None}
+RunConfig(shots=1)
+{'timeout': None}
+{}
+{}
+Measurement mitigation: None
+-- eval_time: None
+-- eval_count: 0
+-- callback: None
+===============================================================
+     ┌───┐┌───────┐
+q_0: ┤ X ├┤ Rz(0) ├
+     └───┘└───────┘
+q_1: ──────────────
+     ┌───┐         
+q_2: ┤ X ├─────────
+     └───┘         
+q_3: ──────────────
+                   ===============================================================
+Optimizer: SLSQP
+-- method: slsqp
+-- bounds_support_level: 2
+-- gradient_support_level: 2
+-- initial_point_support_level: 3
+-- options: {'maxiter': 100, 'disp': False, 'ftol': 1e-06, 'eps': 1.4901161193847656e-08}
+-- max_evals_grouped: 1
+-- kwargs: {'tol': None}
+===============================================================
+
+DEBUG:stevedore._cache:reading /MS/sk19ms123/.cache/python-entrypoints/9ad07889f4dc9451cb53b99225286d94bc8784437937cda53f0b7bfa684b2a78
+DEBUG:stevedore._cache:writing to /MS/sk19ms123/.cache/python-entrypoints/9ad07889f4dc9451cb53b99225286d94bc8784437937cda53f0b7bfa684b2a78
+DEBUG:stevedore.extension:found extension EntryPoint(name='basic', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:BasicSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='lookahead', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:LookaheadSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='none', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:NoneRoutingPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='sabre', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:SabreSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='stochastic', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:StochasticSwapPassManager', group='qiskit.transpiler.routing')
+INFO:qiskit.transpiler.runningpassmanager:Pass: ContainsInstruction - 0.01216 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: UnitarySynthesis - 0.00143 (ms)
+DEBUG:stevedore.extension:found extension EntryPoint(name='clifford.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisClifford', group='qiskit.synthesis')
+DEBUG:stevedore.extension:found extension EntryPoint(name='linear_function.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisLinearFunction', group='qiskit.synthesis')
+INFO:qiskit.transpiler.runningpassmanager:Pass: HighLevelSynthesis - 0.17166 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: UnrollCustomDefinitions - 0.09179 (ms)
+INFO:qiskit.transpiler.passes.basis.basis_translator:Begin BasisTranslator from source basis {('x', 1), ('rz', 1)} to target basis {'mcp', 'mcswap', 'mcphase', 'kraus', 'y', 'unitary', 'save_amplitudes', 'delay', 'u', 'mcr', 's', 'cz', 'cx', 'reset', 'roerror', 'cu3', 'quantum_channel', 't', 'cu2', 'u1', 'qerror_loc', 'mcx', 'diagonal', 'cu', 'save_expval', 'cu1', 'ry', 'set_statevector', 'mcu2', 'mcu3', 'mcry', 'save_probs', 'sdg', 'mcsx', 'ccx', 'u2', 'barrier', 'save_statevector', 'mcy', 'mcrx', 'sxdg', 'csx', 'mcu1', 'rxx', 'u3', 'pauli', 'rx', 'ryy', 'id', 'h', 'swap', 'cswap', 'x', 'save_amplitudes_sq', 'initialize', 'rzx', 'snapshot', 'z', 'mcu', 'sx', 'p', 'rzz', 'save_state', 'tdg', 'cp', 'save_probs_ket', 'multiplexer', 'mcz', 'rz', 'measure', 'cy', 'save_density_matrix', 'mcrz', 'r'}.
+DEBUG:qiskit.transpiler.passes.basis.basis_translator:Begining basis search from {('x', 1), ('rz', 1)} to {'mcp', 'mcswap', 'mcphase', 'kraus', 'y', 'unitary', 'save_amplitudes', 'delay', 'u', 'mcr', 's', 'cz', 'cx', 'reset', 'roerror', 'cu3', 'quantum_channel', 't', 'cu2', 'u1', 'qerror_loc', 'mcx', 'diagonal', 'cu', 'save_expval', 'cu1', 'ry', 'set_statevector', 'mcu2', 'mcu3', 'mcry', 'save_probs', 'sdg', 'mcsx', 'ccx', 'u2', 'barrier', 'save_statevector', 'mcy', 'mcrx', 'sxdg', 'csx', 'mcu1', 'rxx', 'u3', 'pauli', 'rx', 'ryy', 'id', 'h', 'swap', 'cswap', 'x', 'save_amplitudes_sq', 'initialize', 'rzx', 'snapshot', 'z', 'mcu', 'sx', 'p', 'rzz', 'save_state', 'tdg', 'cp', 'save_probs_ket', 'multiplexer', 'mcz', 'rz', 'measure', 'cy', 'save_density_matrix', 'mcrz', 'r'}.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation path search completed in 0.000s.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation paths composed in 0.000s.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation instructions replaced in 0.000s.
+INFO:qiskit.transpiler.runningpassmanager:Pass: BasisTranslator - 1.23358 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: RemoveResetInZeroState - 0.00739 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.03266 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00906 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.01383 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00596 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Optimize1qGatesDecomposition - 34.83415 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: CXCancellation - 0.02766 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: GatesInBasis - 0.02599 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.02265 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00763 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.01311 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00501 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: ContainsInstruction - 0.01597 (ms)
+INFO:qiskit.compiler.transpiler:Total Transpile Time - 226.27497 (ms)
+DEBUG:qiskit.utils.quantum_instance:==== Before transpiler ====
+DEBUG:qiskit.utils.quantum_instance:Submitting 1 circuits.
+============================================================================
+0-th circuit: 4 qubits, 0 classical bits and 3 operations with depth 2
+op_counts: OrderedDict([('x', 2), ('rz', 1)])
+============================================================================
+
+DEBUG:qiskit.utils.quantum_instance:====  After transpiler ====
+DEBUG:qiskit.utils.quantum_instance:Submitting 1 circuits.
+============================================================================
+0-th circuit: 4 qubits, 0 classical bits and 3 operations with depth 2
+op_counts: OrderedDict([('x', 2), ('rz', 1)])
+============================================================================
+
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.20647 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.12374 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.83696799] - 241.95981 (ms), eval count: 1
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.16737 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.07963 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.83696799] - 1.39523 (ms), eval count: 2
+DEBUG:stevedore.extension:found extension EntryPoint(name='basic', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:BasicSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='lookahead', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:LookaheadSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='none', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:NoneRoutingPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='sabre', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:SabreSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='stochastic', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:StochasticSwapPassManager', group='qiskit.transpiler.routing')
+INFO:qiskit.transpiler.runningpassmanager:Pass: ContainsInstruction - 0.00906 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: UnitarySynthesis - 0.00095 (ms)
+DEBUG:stevedore.extension:found extension EntryPoint(name='clifford.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisClifford', group='qiskit.synthesis')
+DEBUG:stevedore.extension:found extension EntryPoint(name='linear_function.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisLinearFunction', group='qiskit.synthesis')
+INFO:qiskit.transpiler.runningpassmanager:Pass: HighLevelSynthesis - 0.12922 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: UnrollCustomDefinitions - 0.02408 (ms)
+INFO:qiskit.transpiler.passes.basis.basis_translator:Begin BasisTranslator from source basis {('x', 1), ('rz', 1)} to target basis {'mcp', 'mcswap', 'mcphase', 'kraus', 'y', 'unitary', 'save_amplitudes', 'delay', 'u', 'mcr', 's', 'cz', 'cx', 'reset', 'roerror', 'cu3', 'quantum_channel', 't', 'cu2', 'u1', 'qerror_loc', 'mcx', 'diagonal', 'cu', 'save_expval', 'cu1', 'ry', 'set_statevector', 'mcu2', 'mcu3', 'mcry', 'save_probs', 'sdg', 'mcsx', 'ccx', 'u2', 'barrier', 'save_statevector', 'mcy', 'mcrx', 'sxdg', 'csx', 'mcu1', 'rxx', 'u3', 'pauli', 'rx', 'ryy', 'id', 'h', 'swap', 'cswap', 'x', 'save_amplitudes_sq', 'initialize', 'rzx', 'snapshot', 'z', 'mcu', 'sx', 'p', 'rzz', 'save_state', 'tdg', 'cp', 'save_probs_ket', 'multiplexer', 'mcz', 'rz', 'measure', 'cy', 'save_density_matrix', 'mcrz', 'r'}.
+DEBUG:qiskit.transpiler.passes.basis.basis_translator:Begining basis search from {('x', 1), ('rz', 1)} to {'mcp', 'mcswap', 'mcphase', 'kraus', 'y', 'unitary', 'save_amplitudes', 'delay', 'u', 'mcr', 's', 'cz', 'cx', 'reset', 'roerror', 'cu3', 'quantum_channel', 't', 'cu2', 'u1', 'qerror_loc', 'mcx', 'diagonal', 'cu', 'save_expval', 'cu1', 'ry', 'set_statevector', 'mcu2', 'mcu3', 'mcry', 'save_probs', 'sdg', 'mcsx', 'ccx', 'u2', 'barrier', 'save_statevector', 'mcy', 'mcrx', 'sxdg', 'csx', 'mcu1', 'rxx', 'u3', 'pauli', 'rx', 'ryy', 'id', 'h', 'swap', 'cswap', 'x', 'save_amplitudes_sq', 'initialize', 'rzx', 'snapshot', 'z', 'mcu', 'sx', 'p', 'rzz', 'save_state', 'tdg', 'cp', 'save_probs_ket', 'multiplexer', 'mcz', 'rz', 'measure', 'cy', 'save_density_matrix', 'mcrz', 'r'}.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation path search completed in 0.000s.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation paths composed in 0.000s.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation instructions replaced in 0.000s.
+INFO:qiskit.transpiler.runningpassmanager:Pass: BasisTranslator - 0.39577 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: RemoveResetInZeroState - 0.00620 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.02456 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00739 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.01121 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00477 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Optimize1qGatesDecomposition - 7.46703 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: CXCancellation - 0.03481 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: GatesInBasis - 0.02503 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.02313 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00811 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.01454 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00644 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Optimize1qGatesDecomposition - 2.28524 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: CXCancellation - 0.01478 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: GatesInBasis - 0.01740 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.01764 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00596 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.01049 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00477 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: ContainsInstruction - 0.01383 (ms)
+INFO:qiskit.compiler.transpiler:Total Transpile Time - 13.68427 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08798 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Optimization complete in 0.24578547477722168 seconds.
+Found opt_params [-0.77278783] in 2 evals
+DEBUG:qiskit_nature.circuit.library.ansatzes.ucc:Gathering excitation generators...
+DEBUG:qiskit_nature.circuit.library.ansatzes.ucc:Generating excitation list...
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Generated list of single alpha excitations: [(0, 1)]
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Generated list of single beta excitations: [(2, 3)]
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Added the excitation: ((0,), (1,))
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Added the excitation: ((2,), (3,))
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Generated list of single alpha excitations: [(0, 1)]
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Generated list of single beta excitations: [(2, 3)]
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Added the excitation: ((0, 2), (1, 3))
+DEBUG:qiskit_nature.circuit.library.ansatzes.ucc:Checking excitation list...
+DEBUG:qiskit_nature.circuit.library.ansatzes.ucc:Converting excitations into SecondQuantizedOps...
+DEBUG:qiskit_nature.circuit.library.ansatzes.ucc:Converting SecondQuantizedOps into PauliSumOps...
+DEBUG:qiskit_nature.circuit.library.ansatzes.ucc:Gathering excitation generators...
+DEBUG:qiskit_nature.circuit.library.ansatzes.ucc:Generating excitation list...
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Generated list of single alpha excitations: [(0, 1)]
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Generated list of single beta excitations: [(2, 3)]
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Added the excitation: ((0,), (1,))
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Added the excitation: ((2,), (3,))
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Generated list of single alpha excitations: [(0, 1)]
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Generated list of single beta excitations: [(2, 3)]
+DEBUG:qiskit_nature.circuit.library.ansatzes.utils.fermionic_excitation_generator:Added the excitation: ((0, 2), (1, 3))
+DEBUG:stevedore.extension:found extension EntryPoint(name='clifford.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisClifford', group='qiskit.synthesis')
+DEBUG:stevedore.extension:found extension EntryPoint(name='linear_function.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisLinearFunction', group='qiskit.synthesis')
+INFO:qiskit.utils.quantum_instance:Overwriting the number of shots in the quantum instance with the settings from the backend.
+INFO:qiskit.utils.quantum_instance:
+Qiskit Terra version: 0.22.3
+Backend: 'statevector_simulator (AerProvider)', with following setting:
+{'basis_gates': ['ccx', 'cp', 'cswap', 'csx', 'cu', 'cu1', 'cu2', 'cu3', 'cx', 'cy', 'cz', 'delay', 'diagonal', 'h', 'id', 'initialize', 'mcp', 'mcphase', 'mcr', 'mcrx', 'mcry', 'mcrz', 'mcswap', 'mcsx', 'mcu', 'mcu1', 'mcu2', 'mcu3', 'mcx', 'mcy', 'mcz', 'multiplexer', 'p', 'pauli', 'r', 'rx', 'rxx', 'ry', 'ryy', 'rz', 'rzx', 'rzz', 's', 'sdg', 'swap', 'sx', 'sxdg', 't', 'tdg', 'u', 'u1', 'u2', 'u3', 'unitary', 'x', 'y', 'z', 'kraus', 'qerror_loc', 'quantum_channel', 'roerror', 'save_amplitudes', 'save_amplitudes_sq', 'save_density_matrix', 'save_expval', 'save_probs', 'save_probs_ket', 'save_state', 'save_statevector', 'set_statevector'], 'coupling_map': None}
+{'initial_layout': None, 'seed_transpiler': None, 'optimization_level': None}
+RunConfig(shots=1)
+{'timeout': None}
+{}
+{}
+Measurement mitigation: None
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:
+==================== Setting of VQE ============================
+Algorithm: VQE
+-- max_evals_grouped: 1
+-- circuit_sampler: <qiskit.opflow.converters.circuit_sampler.CircuitSampler object at 0x7f3689021b20>
+-- expectation: None
+-- include_custom: False
+-- ansatz:      ┌─────────────────────────────┐
+q_0: ┤0                            ├
+     │                             │
+q_1: ┤1                            ├
+     │  EvolvedOps(t[0],t[1],t[2]) │
+q_2: ┤2                            ├
+     │                             │
+q_3: ┤3                            ├
+     └─────────────────────────────┘
+-- optimizer: <qiskit.algorithms.optimizers.cobyla.COBYLA object at 0x7f368900e280>
+-- initial_point: Random seed
+-- gradient: None
+-- quantum_instance: 
+Qiskit Terra version: 0.22.3
+Backend: 'statevector_simulator (AerProvider)', with following setting:
+{'basis_gates': ['ccx', 'cp', 'cswap', 'csx', 'cu', 'cu1', 'cu2', 'cu3', 'cx', 'cy', 'cz', 'delay', 'diagonal', 'h', 'id', 'initialize', 'mcp', 'mcphase', 'mcr', 'mcrx', 'mcry', 'mcrz', 'mcswap', 'mcsx', 'mcu', 'mcu1', 'mcu2', 'mcu3', 'mcx', 'mcy', 'mcz', 'multiplexer', 'p', 'pauli', 'r', 'rx', 'rxx', 'ry', 'ryy', 'rz', 'rzx', 'rzz', 's', 'sdg', 'swap', 'sx', 'sxdg', 't', 'tdg', 'u', 'u1', 'u2', 'u3', 'unitary', 'x', 'y', 'z', 'kraus', 'qerror_loc', 'quantum_channel', 'roerror', 'save_amplitudes', 'save_amplitudes_sq', 'save_density_matrix', 'save_expval', 'save_probs', 'save_probs_ket', 'save_state', 'save_statevector', 'set_statevector'], 'coupling_map': None}
+{'initial_layout': None, 'seed_transpiler': None, 'optimization_level': None}
+RunConfig(shots=1)
+{'timeout': None}
+{}
+{}
+Measurement mitigation: None
+-- eval_time: None
+-- eval_count: 0
+-- callback: <function store_intermediate_result at 0x7f3689005160>
+===============================================================
+     ┌─────────────────────────────┐
+q_0: ┤0                            ├
+     │                             │
+q_1: ┤1                            ├
+     │  EvolvedOps(t[0],t[1],t[2]) │
+q_2: ┤2                            ├
+     │                             │
+q_3: ┤3                            ├
+     └─────────────────────────────┘===============================================================
+Optimizer: COBYLA
+-- method: cobyla
+-- bounds_support_level: 1
+-- gradient_support_level: 1
+-- initial_point_support_level: 3
+-- options: {'maxiter': 10000, 'disp': False, 'rhobeg': 1.0}
+-- max_evals_grouped: 1
+-- kwargs: {'tol': None}
+===============================================================
+
+DEBUG:stevedore.extension:found extension EntryPoint(name='basic', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:BasicSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='lookahead', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:LookaheadSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='none', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:NoneRoutingPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='sabre', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:SabreSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='stochastic', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:StochasticSwapPassManager', group='qiskit.transpiler.routing')
+INFO:qiskit.transpiler.runningpassmanager:Pass: ContainsInstruction - 0.00882 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: UnitarySynthesis - 0.00095 (ms)
+DEBUG:stevedore.extension:found extension EntryPoint(name='clifford.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisClifford', group='qiskit.synthesis')
+DEBUG:stevedore.extension:found extension EntryPoint(name='linear_function.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisLinearFunction', group='qiskit.synthesis')
+INFO:qiskit.transpiler.runningpassmanager:Pass: HighLevelSynthesis - 0.12326 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: UnrollCustomDefinitions - 34.82509 (ms)
+INFO:qiskit.transpiler.passes.basis.basis_translator:Begin BasisTranslator from source basis {('sdg', 1), ('h', 1), ('cx', 2), ('x', 1), ('s', 1), ('rz', 1)} to target basis {'mcp', 'mcswap', 'mcphase', 'kraus', 'y', 'unitary', 'save_amplitudes', 'delay', 'u', 'mcr', 's', 'cz', 'cx', 'reset', 'roerror', 'cu3', 'quantum_channel', 't', 'cu2', 'u1', 'qerror_loc', 'mcx', 'diagonal', 'cu', 'save_expval', 'cu1', 'ry', 'set_statevector', 'mcu2', 'mcu3', 'mcry', 'save_probs', 'sdg', 'mcsx', 'ccx', 'u2', 'barrier', 'save_statevector', 'mcy', 'mcrx', 'sxdg', 'csx', 'mcu1', 'rxx', 'u3', 'pauli', 'rx', 'ryy', 'id', 'h', 'swap', 'cswap', 'x', 'save_amplitudes_sq', 'initialize', 'rzx', 'snapshot', 'z', 'mcu', 'sx', 'p', 'rzz', 'save_state', 'tdg', 'cp', 'save_probs_ket', 'multiplexer', 'mcz', 'rz', 'measure', 'cy', 'save_density_matrix', 'mcrz', 'r'}.
+DEBUG:qiskit.transpiler.passes.basis.basis_translator:Begining basis search from {('sdg', 1), ('h', 1), ('cx', 2), ('x', 1), ('s', 1), ('rz', 1)} to {'mcp', 'mcswap', 'mcphase', 'kraus', 'y', 'unitary', 'save_amplitudes', 'delay', 'u', 'mcr', 's', 'cz', 'cx', 'reset', 'roerror', 'cu3', 'quantum_channel', 't', 'cu2', 'u1', 'qerror_loc', 'mcx', 'diagonal', 'cu', 'save_expval', 'cu1', 'ry', 'set_statevector', 'mcu2', 'mcu3', 'mcry', 'save_probs', 'sdg', 'mcsx', 'ccx', 'u2', 'barrier', 'save_statevector', 'mcy', 'mcrx', 'sxdg', 'csx', 'mcu1', 'rxx', 'u3', 'pauli', 'rx', 'ryy', 'id', 'h', 'swap', 'cswap', 'x', 'save_amplitudes_sq', 'initialize', 'rzx', 'snapshot', 'z', 'mcu', 'sx', 'p', 'rzz', 'save_state', 'tdg', 'cp', 'save_probs_ket', 'multiplexer', 'mcz', 'rz', 'measure', 'cy', 'save_density_matrix', 'mcrz', 'r'}.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation path search completed in 0.000s.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation paths composed in 0.001s.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation instructions replaced in 0.000s.
+INFO:qiskit.transpiler.runningpassmanager:Pass: BasisTranslator - 1.27673 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: RemoveResetInZeroState - 0.06914 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.14377 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00787 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.06747 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00477 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Optimize1qGatesDecomposition - 43.50281 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: CXCancellation - 0.21529 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: GatesInBasis - 0.06247 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.09966 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00739 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.04697 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00525 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Optimize1qGatesDecomposition - 26.61014 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: CXCancellation - 0.21076 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: GatesInBasis - 0.06175 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.10180 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00906 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.04721 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00501 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: ContainsInstruction - 0.05031 (ms)
+INFO:qiskit.compiler.transpiler:Total Transpile Time - 111.90891 (ms)
+DEBUG:qiskit.utils.quantum_instance:==== Before transpiler ====
+DEBUG:qiskit.utils.quantum_instance:Submitting 1 circuits.
+============================================================================
+0-th circuit: 4 qubits, 0 classical bits and 1 operations with depth 1
+op_counts: OrderedDict([('EvolvedOps', 1)])
+============================================================================
+
+DEBUG:qiskit.utils.quantum_instance:====  After transpiler ====
+DEBUG:qiskit.utils.quantum_instance:Submitting 1 circuits.
+============================================================================
+0-th circuit: 4 qubits, 0 classical bits and 99 operations with depth 73
+op_counts: OrderedDict([('cx', 56), ('u2', 26), ('rz', 12), ('h', 5)])
+============================================================================
+
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.77033 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08559 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.83696799] - 116.56642 (ms), eval count: 1
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 2.32148 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10657 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.28940445] - 5.87153 (ms), eval count: 2
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.89526 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08321 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.28940445] - 4.39811 (ms), eval count: 3
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.08051 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09251 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-0.87441261] - 4.77815 (ms), eval count: 4
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.03521 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08988 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-0.64588933] - 5.12791 (ms), eval count: 5
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.07741 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09203 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.35996023] - 4.97508 (ms), eval count: 6
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.08290 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09489 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.77567598] - 5.33915 (ms), eval count: 7
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.88501 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.07868 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.79982695] - 4.04906 (ms), eval count: 8
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.93722 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08178 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.82671527] - 4.31991 (ms), eval count: 9
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.31106 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.11420 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.82379203] - 5.75113 (ms), eval count: 10
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.14059 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09847 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85282759] - 5.28550 (ms), eval count: 11
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.13678 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.13185 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85515058] - 6.29067 (ms), eval count: 12
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.20687 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10395 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85232166] - 5.30767 (ms), eval count: 13
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.08218 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09704 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85433558] - 4.87900 (ms), eval count: 14
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.05500 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09179 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85472525] - 4.82082 (ms), eval count: 15
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.05882 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09513 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85599535] - 5.01490 (ms), eval count: 16
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.12557 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09918 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85673916] - 5.34272 (ms), eval count: 17
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.36352 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.12064 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85714009] - 6.20174 (ms), eval count: 18
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.14870 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09918 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85713493] - 4.78911 (ms), eval count: 19
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.97609 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08416 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85717484] - 4.46606 (ms), eval count: 20
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.97346 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08345 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85710183] - 4.85301 (ms), eval count: 21
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.14465 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10061 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85711619] - 5.23233 (ms), eval count: 22
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.19972 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10777 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85714239] - 5.71513 (ms), eval count: 23
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.21975 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10681 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85711741] - 5.47576 (ms), eval count: 24
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.94318 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10300 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85721405] - 4.33350 (ms), eval count: 25
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.96297 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08416 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85723012] - 4.53305 (ms), eval count: 26
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.33705 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.11182 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.8572639] - 5.63741 (ms), eval count: 27
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.07098 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09465 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85725414] - 4.94266 (ms), eval count: 28
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.09673 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09632 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727167] - 5.00131 (ms), eval count: 29
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.04070 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08988 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85724078] - 4.77958 (ms), eval count: 30
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.04141 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09036 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85725335] - 5.16582 (ms), eval count: 31
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.22905 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.11158 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727391] - 5.36132 (ms), eval count: 32
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.10674 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10133 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85726978] - 5.73564 (ms), eval count: 33
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.34230 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08225 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727391] - 4.96769 (ms), eval count: 34
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.32775 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09823 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727482] - 5.87893 (ms), eval count: 35
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.16467 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08988 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727438] - 4.56023 (ms), eval count: 36
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.93269 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08178 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727303] - 4.22287 (ms), eval count: 37
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.23000 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10371 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727418] - 5.35178 (ms), eval count: 38
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.13177 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10157 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727473] - 5.10192 (ms), eval count: 39
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.90432 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08059 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727482] - 4.18186 (ms), eval count: 40
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.94938 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08059 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727497] - 4.44388 (ms), eval count: 41
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.23405 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10610 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727497] - 5.60141 (ms), eval count: 42
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.17397 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10252 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.8572749] - 5.37276 (ms), eval count: 43
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.19114 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10204 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727501] - 4.97651 (ms), eval count: 44
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.00970 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08750 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727501] - 4.59361 (ms), eval count: 45
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 0.99754 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.08655 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727501] - 4.88400 (ms), eval count: 46
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.11628 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.09847 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727499] - 5.29933 (ms), eval count: 47
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.17373 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10347 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727503] - 5.38301 (ms), eval count: 48
+DEBUG:qiskit.opflow.converters.circuit_sampler:Parameter binding 1.17302 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10180 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Energy evaluation returned [-1.85727503] - 5.36633 (ms), eval count: 49
+DEBUG:stevedore.extension:found extension EntryPoint(name='basic', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:BasicSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='lookahead', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:LookaheadSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='none', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:NoneRoutingPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='sabre', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:SabreSwapPassManager', group='qiskit.transpiler.routing')
+DEBUG:stevedore.extension:found extension EntryPoint(name='stochastic', value='qiskit.transpiler.preset_passmanagers.builtin_plugins:StochasticSwapPassManager', group='qiskit.transpiler.routing')
+INFO:qiskit.transpiler.runningpassmanager:Pass: ContainsInstruction - 0.01287 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: UnitarySynthesis - 0.00215 (ms)
+DEBUG:stevedore.extension:found extension EntryPoint(name='clifford.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisClifford', group='qiskit.synthesis')
+DEBUG:stevedore.extension:found extension EntryPoint(name='linear_function.default', value='qiskit.transpiler.passes.synthesis.high_level_synthesis:DefaultSynthesisLinearFunction', group='qiskit.synthesis')
+INFO:qiskit.transpiler.runningpassmanager:Pass: HighLevelSynthesis - 0.19503 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: UnrollCustomDefinitions - 27.51374 (ms)
+INFO:qiskit.transpiler.passes.basis.basis_translator:Begin BasisTranslator from source basis {('sdg', 1), ('h', 1), ('cx', 2), ('x', 1), ('s', 1), ('rz', 1)} to target basis {'mcp', 'mcswap', 'mcphase', 'kraus', 'y', 'unitary', 'save_amplitudes', 'delay', 'u', 'mcr', 's', 'cz', 'cx', 'reset', 'roerror', 'cu3', 'quantum_channel', 't', 'cu2', 'u1', 'qerror_loc', 'mcx', 'diagonal', 'cu', 'save_expval', 'cu1', 'ry', 'set_statevector', 'mcu2', 'mcu3', 'mcry', 'save_probs', 'sdg', 'mcsx', 'ccx', 'u2', 'barrier', 'save_statevector', 'mcy', 'mcrx', 'sxdg', 'csx', 'mcu1', 'rxx', 'u3', 'pauli', 'rx', 'ryy', 'id', 'h', 'swap', 'cswap', 'x', 'save_amplitudes_sq', 'initialize', 'rzx', 'snapshot', 'z', 'mcu', 'sx', 'p', 'rzz', 'save_state', 'tdg', 'cp', 'save_probs_ket', 'multiplexer', 'mcz', 'rz', 'measure', 'cy', 'save_density_matrix', 'mcrz', 'r'}.
+DEBUG:qiskit.transpiler.passes.basis.basis_translator:Begining basis search from {('sdg', 1), ('h', 1), ('cx', 2), ('x', 1), ('s', 1), ('rz', 1)} to {'mcp', 'mcswap', 'mcphase', 'kraus', 'y', 'unitary', 'save_amplitudes', 'delay', 'u', 'mcr', 's', 'cz', 'cx', 'reset', 'roerror', 'cu3', 'quantum_channel', 't', 'cu2', 'u1', 'qerror_loc', 'mcx', 'diagonal', 'cu', 'save_expval', 'cu1', 'ry', 'set_statevector', 'mcu2', 'mcu3', 'mcry', 'save_probs', 'sdg', 'mcsx', 'ccx', 'u2', 'barrier', 'save_statevector', 'mcy', 'mcrx', 'sxdg', 'csx', 'mcu1', 'rxx', 'u3', 'pauli', 'rx', 'ryy', 'id', 'h', 'swap', 'cswap', 'x', 'save_amplitudes_sq', 'initialize', 'rzx', 'snapshot', 'z', 'mcu', 'sx', 'p', 'rzz', 'save_state', 'tdg', 'cp', 'save_probs_ket', 'multiplexer', 'mcz', 'rz', 'measure', 'cy', 'save_density_matrix', 'mcrz', 'r'}.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation path search completed in 0.000s.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation paths composed in 0.000s.
+INFO:qiskit.transpiler.passes.basis.basis_translator:Basis translation instructions replaced in 0.000s.
+INFO:qiskit.transpiler.runningpassmanager:Pass: BasisTranslator - 1.20091 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: RemoveResetInZeroState - 0.06175 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.14114 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00739 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.06795 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00477 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Optimize1qGatesDecomposition - 50.38285 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: CXCancellation - 0.17881 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: GatesInBasis - 0.05913 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.09775 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00691 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.04649 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00525 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Optimize1qGatesDecomposition - 34.49059 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: CXCancellation - 0.21982 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: GatesInBasis - 0.06485 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Depth - 0.10395 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00930 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: Size - 0.04840 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: FixedPoint - 0.00548 (ms)
+INFO:qiskit.transpiler.runningpassmanager:Pass: ContainsInstruction - 0.05198 (ms)
+INFO:qiskit.compiler.transpiler:Total Transpile Time - 120.81099 (ms)
+INFO:qiskit.compiler.assembler:Total Assembly Time - 0.10943 (ms)
+INFO:qiskit.algorithms.minimum_eigen_solvers.vqe:Optimization complete in 0.3731691837310791 seconds.
+Found opt_params [-3.99498652e-05  3.42146740e-05  1.11747586e-01] in 49 evals
+DEBUG:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:PySCF processing messages log:
+System: uname_result(system='Linux', node='iiserk37-OptiPlex-9020', release='5.15.0-56-generic', version='#62~20.04.1-Ubuntu SMP Tue Nov 22 21:24:20 UTC 2022', machine='x86_64', processor='x86_64')  Threads 4
+Python 3.8.10 (default, Nov 14 2022, 12:59:47) 
+[GCC 9.4.0]
+numpy 1.23.5  scipy 1.9.3
+Date: Wed Dec 14 17:46:32 2022
+PySCF version 2.1.1
+PySCF path  /MS/sk19ms123/.local/lib/python3.8/site-packages/pyscf
+
+[CONFIG] conf_file None
+[INPUT] verbose = 4
+[INPUT] num. atoms = 2
+[INPUT] num. electrons = 2
+[INPUT] charge = 0
+[INPUT] spin (= nelec alpha-beta = 2S) = 0
+[INPUT] symmetry False subgroup None
+[INPUT] Mole.unit = Angstrom
+[INPUT] Symbol           X                Y                Z      unit          X                Y                Z       unit  Magmom
+[INPUT]  1 H      0.000000000000   0.000000000000   0.000000000000 AA    0.000000000000   0.000000000000   0.000000000000 Bohr   0.0
+[INPUT]  2 H      0.000000000000   0.000000000000   0.735000000000 AA    0.000000000000   0.000000000000   1.388948701555 Bohr   0.0
+
+nuclear repulsion = 0.71996899444898
+number of shells = 2
+number of NR pGTOs = 6
+number of NR cGTOs = 2
+basis = sto3g
+ecp = {}
+CPU time:         4.52
+
+INFO:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:PySCF kernel() converged: True, e(hf): -1.1169989967540035
+INFO:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:HF Electronic dipole moment: [-0.        -0.        -1.3889487]
+INFO:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:Nuclear dipole moment: [0.        0.        1.3889487]
+INFO:qiskit_nature.drivers.second_quantization.pyscfd.pyscfdriver:Total dipole moment: [0. 0. 0.]
+DEBUG:qiskit.algorithms.eigen_solvers.numpy_eigen_solver:EigensolverResult:
+{   'aux_operator_eigenvalues': [   {   'AngularMomentum': (0.0, 0.0),
+                                        'DipoleMomentX': (0.0, 0.0),
+                                        'DipoleMomentY': (0.0, 0.0),
+                                        'DipoleMomentZ': (   (1.3889487015553188+0j),
+                                                             0.0),
+                                        'Magnetization': (0.0, 0.0),
+                                        'ParticleNumber': (   (1.9999999999999991+0j),
+                                                              0.0)}],
+    'eigenstates': ListOp([VectorStateFn(Statevector([-8.80673709e-17-1.94086456e-19j,
+              3.67440815e-16+3.20599567e-16j,
+              7.76571679e-17-2.07930819e-16j,
+             -2.54889494e-16+6.79629077e-17j,
+             -1.37409764e-16+9.75422067e-17j,
+             -6.66746191e-01-7.36891615e-01j,
+              5.93032173e-17+1.40685499e-16j,
+              2.72164893e-17-4.86745957e-17j,
+             -3.99415537e-16-5.32493452e-17j,
+             -1.95077701e-16-2.18362950e-16j,
+              7.48330908e-02+8.27059500e-02j,
+             -1.01291658e-16+3.03437105e-16j,
+              3.59493050e-16-1.54768512e-16j,
+             -1.60310181e-17+9.85955998e-17j,
+             -2.08311549e-16+4.01662584e-16j,
+              3.78161573e-18-3.77047985e-17j],
+            dims=(2, 2, 2, 2)), coeff=1.0, is_measurement=False)], coeff=1.0, abelian=False),
+    'eigenvalues': array([-1.85727503])}
+DEBUG:qiskit.algorithms.minimum_eigen_solvers.numpy_minimum_eigen_solver:MinimumEigensolver:
+{   'aux_operator_eigenvalues': {   'AngularMomentum': (0.0, 0.0),
+                                    'DipoleMomentX': (0.0, 0.0),
+                                    'DipoleMomentY': (0.0, 0.0),
+                                    'DipoleMomentZ': (   (1.3889487015553188+0j),
+                                                         0.0),
+                                    'Magnetization': (0.0, 0.0),
+                                    'ParticleNumber': (   (1.9999999999999991+0j),
+                                                          0.0)},
+    'eigenstate': VectorStateFn(Statevector([-8.80673709e-17-1.94086456e-19j,
+              3.67440815e-16+3.20599567e-16j,
+              7.76571679e-17-2.07930819e-16j,
+             -2.54889494e-16+6.79629077e-17j,
+             -1.37409764e-16+9.75422067e-17j,
+             -6.66746191e-01-7.36891615e-01j,
+              5.93032173e-17+1.40685499e-16j,
+              2.72164893e-17-4.86745957e-17j,
+             -3.99415537e-16-5.32493452e-17j,
+             -1.95077701e-16-2.18362950e-16j,
+              7.48330908e-02+8.27059500e-02j,
+             -1.01291658e-16+3.03437105e-16j,
+              3.59493050e-16-1.54768512e-16j,
+             -1.60310181e-17+9.85955998e-17j,
+             -2.08311549e-16+4.01662584e-16j,
+              3.78161573e-18-3.77047985e-17j],
+            dims=(2, 2, 2, 2)), coeff=1.0, is_measurement=False),
+    'eigenvalue': -1.8572750302023853}
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal bold normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal bold normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-Th.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Jamrul' (JamrulNormal.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrow.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Roman.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Kannada' (Lohit-Kannada.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AnjaliOldLipi' (AnjaliOldLipi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chandas' (chandas1-2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pothana2000' (Pothana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gurmukhi' (Lohit-Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Gujarati' (Samyak-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Medium.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa-Medium-0.5.ttf) normal normal normal normal>) = 10.0
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal medium normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-DemiItalic.otf) italic normal book normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_SansSerif' (MathJax_SansSerif-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-BoldItalic.otf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBI.ttf) oblique normal bold normal>) = 2.244090909090909
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_SansSerif' (MathJax_SansSerif-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gujarati' (Lohit-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraIt.ttf) oblique normal 400 normal>) = 1.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil Classical' (Lohit-Tamil-Classical.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gubbi' (Gubbi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ani' (ani.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSeBd.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Math' (MathJax_Math-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil' (Lohit-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Dyuthi' (Dyuthi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Main' (MathJax_Main-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'wasy10' (wasy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'elusiveicons' (elusiveicons-webfont.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Caligraphic' (MathJax_Caligraphic-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'esint10' (esint10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Typewriter' (MathJax_Typewriter-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Math' (MathJax_Math-BoldItalic.otf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-BdIta.otf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (VeraBd.ttf) normal normal bold normal>) = 1.2440909090909091
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Keraleeyam' (Keraleeyam-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal bold condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Italic.otf) italic normal roman normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Script' (MathJax_Script-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Suruma' (Suruma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Demi.otf) normal normal demi normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Bold.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Meera' (Meera-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Likhan' (LikhanNormal.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-BoldOblique.otf) oblique normal bold condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoIt.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-BoldItalic.otf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa-Bold.1.1' (padmaa-Bold.1.1.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Fraktur' (MathJax_Fraktur-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sahadeva' (sahadeva.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Thin.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'D050000L' (D050000L.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Size1' (MathJax_Size1-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Light.otf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalimati' (kalimati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Regular.ttf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Medium.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nakula' (nakula.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalapi' (Kalapi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Uroob' (Uroob-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Caligraphic' (MathJax_Caligraphic-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'ori1Uni' (utkal.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Odia' (Lohit-Odia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans' (Vera.ttf) normal normal 400 normal>) = 0.9590909090909092
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Devanagari' (Lohit-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_WinIE6' (MathJax_WinIE6-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Tamil' (Samyak-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Size4' (MathJax_Size4-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Standard Symbols PS' (StandardSymbolsPS.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Main' (MathJax_Main-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Thin.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FontAwesome' (fontawesome-webfont.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-SemiBold.ttf) normal normal semibold normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Devanagari' (Samyak-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_SansSerif' (MathJax_SansSerif-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-DemiOblique.otf) oblique normal demi normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Vector' (MathJax_Vector-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gargi' (Gargi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Regular.otf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_WinChrome' (MathJax_WinChrome-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'stmary10' (stmary10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrowBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Bengali' (Lohit-Bengali.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Bold.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Vector-Bold' (MathJax_Vector-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Fraktur' (MathJax_Fraktur-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal bold condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Regular.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMoBI.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Sans Mono' (VeraMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msam10' (msam10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Malayalam' (Samyak-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Math' (MathJax_Math-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-BoldItalic.otf) italic normal roman normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-BookOblique.otf) oblique normal book normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Bitstream Vera Serif' (VeraSe.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Demi.otf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pagul' (Pagul.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Main' (MathJax_Main-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'aakar' (aakar-medium.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Assamese' (Lohit-Assamese.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rekha' (Rekha.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chilanka' (Chilanka-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Vemana2000' (vemana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Navilu' (Navilu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_AMS' (MathJax_AMS-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Bold.otf) normal normal bold condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Bold.ttf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FontAwesome' (FontAwesome.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samanata' (samanata.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Karumbi' (Karumbi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-BoldItalic.otf) italic normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Z003' (Z003-MediumItalic.otf) italic normal medium normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'GLYPHICONS Halflings' (glyphicons-halflings-regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'eufm10' (eufm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Bold.otf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'RaghuMalayalamSans' (RaghuMalayalamSans-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Oblique.otf) oblique normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Roman.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-SemiBold.ttf) normal normal semibold normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal bold normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Malayalam' (Lohit-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Telugu' (Lohit-Telugu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'rsfs10' (rsfs10.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal bold normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mitra Mono' (mitra.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sarai' (Sarai.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Size3' (MathJax_Size3-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'MathJax_Size2' (MathJax_Size2-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-LightItalic.otf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'msbm10' (msbm10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Book.otf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/usr/share/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
